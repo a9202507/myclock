@@ -6,7 +6,7 @@ import requests
 sched = BlockingScheduler()
 
 
-@sched.scheduled_job('cron', day_of_week='mon-sun', minute='*/20')
+@sched.scheduled_job('cron', day_of_week='mon-sun', minute='*/28')
 def scheduled_job():
     # 宣告一個排程
     sched = BlockingScheduler()
